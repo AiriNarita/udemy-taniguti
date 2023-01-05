@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>ご利用アンケート</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container-lg">
+            <header>
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <h1>ご利用アンケート</h1>
+                    </div>
+
+                    <div class="col-sm-6 text-right">    
+                        <a href="/">homeへ戻る</a>
+                    </div>    
+
+                </div>
+                
+            </header>
+        </div>    
+
+            <hr>
+
+        <div class="container">
+
+            <form action=""  method="post" class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <p>この度は本書をご利用いただきありがとうございます。恐れ入りますが以下のフォームにご記入いただき送信していただけると幸いです。</p>
+                
+                    <div class="formgroup">
+
+                        <label for="name" >お名前</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="例）山田太郎">
+                    </div>    
+                    
+                    <div class="form-group">
+                        <label for="job">ご職業</label>
+                        <select id="job" name="job" class="form-control">
+                            <option value="">選択してください</option>
+                            <option value="会社員">会社員</option>
+                            <option value="学生">学生</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>知りたい内容 (複数選択　可)</label>
+                            <div class="form-check">
+                                <input type="checkbox" name="q1" id="q1_1" value="HTML" class="form-check-input">
+                                <lavel for="q1_1" class="form-check-label" >HTML</lavel>   
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" name="q1" id="q1_2" value="CSS" class="form-check-input">
+                                <lavel for="q1_2" class="form-check-label" >CSS</lavel>   
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" name="q1" id="q1_3" value="javascript" class="form-check-input">
+                                <lavel for="q1_3" class="form-check-label" >javascript</lavel>   
+                            </div>
+
+
+                    </div>
+                </div>
+            </form>
+
+        </div>    
+            <hr>
+
+        <div class="container">    
+            <footer>
+                <p>&copy;あいりスタディ</p>
+            </footer>
+        </div>    
+    </body>
+
+</html>
